@@ -1,0 +1,9 @@
+package rules
+
+rule "Rule"
+    //a comment
+    when
+        f : rules.Fact2(fact != null && fact.getValue() == 3)
+    then
+        System.out.println("rules fired");
+    end
